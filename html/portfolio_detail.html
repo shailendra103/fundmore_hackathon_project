@@ -23,10 +23,20 @@
     <link href="assets/stylesheets/bootstrap/bootstrap.min.css" media="all" id="bootstrap" rel="stylesheet" type="text/css" />
     <link href="assets/stylesheets/jednotka_red.css" media="all" id="colors" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="http://cssslider.com/styles.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://blackrockdigital.github.io/startbootstrap-full-slider/css/full-slider.css" type="text/css"/>
+
     <!--[if lt IE 9]>
       <script src="assets/javascripts/ie/html5shiv.js" type="text/javascript"></script>
       <script src="assets/javascripts/ie/respond.min.js" type="text/javascript"></script>
     <![endif]-->
+     <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+
   </head>
   <body class=''>
     <div id='wrapper'>
@@ -213,36 +223,50 @@
         </div>
       </header>
       <div id='main' role='main'>
-        <div id='main-content-header'>
+        <div id='main-content-header1'>
           <div class='container'>
-            <div class='row'>
-              <div class='col-sm-12'>
-                <h1 class='title'>
-                  Project detail
-                </h1>
-                <ol class='breadcrumb'>
-                  <li>
-                    <a href='index.html'>
-                      <i class='fa fa-home'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href='portfolio.html'>
-                      Portolio
-                    </a>
-                  </li>
-                  <li class='active'>Project detail</li>
-                </ol>
-                <div class='directional'>
-                  <a class='has-tooltip left' data-placement='right' data-title='Previous project' href='#'>
-                    <i class='fa fa-chevron-left'></i>
-                  </a>
-                  <a class='has-tooltip right' data-placement='left' data-title='Next project' href='#'>
-                    <i class='fa fa-chevron-right'></i>
-                  </a>
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div>
+                  <img src='http://cssslider.com/sliders/demo-8/data1/images/dirt_bike_motorcycle_jump_autumn.jpg' alt='bootstrap carousel' title='Motorcycle jump ' />
+
                 </div>
-              </div>
             </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div>
+                  <img src='http://cssslider.com/sliders/demo-8/data1/images/dirt_bike_motorcycle_jump_autumn.jpg' alt='bootstrap carousel' title='Motorcycle jump ' />
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div>
+
+                  <img src='http://cssslider.com/sliders/demo-8/data1/images/motorcycle_zero_s_action_san_francisco_stunt_rider.jpg' alt='HTML5 image freeware navigation  autoplay with thumb' title='Stunt rider' />
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
           </div>
         </div>
         <div id='main-content'>
@@ -298,8 +322,14 @@
               <div class='col-md-pull-3 col-sm-pull-4 col-sm-8 col-md-9'>
                 <div class='row'>
                   <div class='col-sm-12'>
-                    <h2 class='no-mg-t'>Project description</h2>
-                    <p class='lead lead-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu justo vitae odio rhoncus pulvinar. Morbi ac congue orci. Nulla tristique ultrices purus vel egestas. Aliquam viverra volutpat facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin commodo sit amet eros non dapibus. Aenean vitae fermentum diam.</p>
+                    <h2 class='no-mg-t'>Investment Summary</h2>
+                    <p class='lead lead-sm'>The Opportunity Provider has acquired a piece of land to build a 41-unit condominium project in Seremban. The total amount required from the Opportunity Provider is to build the project is $10,000,000, The Opportunity Provider is using its internal funds of $5,000,000 to finance the projects construction and it needs to raise the balance 50% - 5,000,000 using debt financing.
+It is expected that construction will take one and a half years while marketing and selling the project will take another one and a half years. Hence, the opportunity provider is confident of repaying the loans to investors after 3 years.
+<br/>
+<br/>
+The property is located in downtown Seremban, which is the 4th most populous metropolitan area in the nation. Seremban also has the third-largest manufacturing employment market in the country and has experienced strong growth over the last 5 years. According the the recent 1Q16 market report by WTW, the Seremban residential market has a vacancy rate of approximately 4.5% with rent growth of nearly 8% year on year.<br/>
+<br/>
+The Opportunity Provider, ABC Sdn Bhd, is a real estate development and construction firm focused on selected Malaysian residential markets including Seremban and KL.</p>
                     <div class='row'>
                       <div class='col-sm-12'>
                         <div class='browser-window'>
@@ -559,6 +589,10 @@
     <script src="assets/javascripts/plugins/nivo_lightbox/nivo-lightbox.min.js" type="text/javascript"></script>
     <script src="assets/javascripts/plugins/cycle/jquery.cycle.all.min.js" type="text/javascript"></script>
     <script src="assets/javascripts/jednotka.js" type="text/javascript"></script>
-
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
   </body>
 </html>
