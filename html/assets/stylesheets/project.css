@@ -1,0 +1,57 @@
+.grid-md::before, .article-list-recommended::before, .article-list-standard .article-list-item-inner::before, .grid-md::after, .article-list-recommended::after, .article-list-standard .article-list-item-inner::after, .grid-md > *::before, .article-list-recommended > *::before, .article-list-standard .article-list-item-inner > *::before, .grid-md > *::after, .article-list-recommended > *::after, .article-list-standard .article-list-item-inner > *::after {
+    content: " ";
+    display: table;
+}
+
+.grid-md::before, .article-list-recommended::before, .article-list-standard .article-list-item-inner::before, .grid-md::after, .article-list-recommended::after, .article-list-standard .article-list-item-inner::after, .grid-md > *::before, .article-list-recommended > *::before, .article-list-standard .article-list-item-inner > *::before, .grid-md > *::after, .article-list-recommended > *::after, .article-list-standard .article-list-item-inner > *::after {
+    content: " ";
+    display: table;
+}
+
+.grid-md::after, .article-list-recommended::after, .article-list-standard .article-list-item-inner::after, .grid-md > *::after, .article-list-recommended > *::after, .article-list-standard .article-list-item-inner > *::after {
+    clear: both;
+}
+
+.col-2-md {
+    width: 16.6667%;
+}
+
+.grid-md > *, .article-list-recommended > *, .article-list-standard .article-list-item-inner > * {
+    float: left;
+    min-height: 1px;
+}
+
+.line-height-125, .article-is-featured .article-title, .article-list-item-title, .investor-dashboard-page-heading, .module-header-heading, .quiz-question {
+    line-height: 1.25;
+}
+
+.muted, .countdown-clock-dark .clock-group + .clock-group .time::before, .countdown-clock-dark .measurement, .placeholder-text {
+    color: #878c92;
+}
+
+.dark, .capital-programs thead th.filled, .module-header-heading, .heading-text-color, .offering-update-section-subheading {
+    color: #242628;
+}
+
+.dark, .capital-programs thead th.filled, .module-header-heading, .heading-text-color, .offering-update-section-subheading {
+    color: #242628;
+}
+
+.bl-md {
+    border-left-color: #e3e6e8;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.grid-md::after, .article-list-recommended::after, .article-list-standard .article-list-item-inner::after, .grid-md > *::after, .article-list-recommended > *::after, .article-list-standard .article-list-item-inner > *::after {
+    clear: both;
+}
+
+.gutters-300-md > *, .grid-gutters-wide-md > * {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.col-10-lg {
+    width: 83.3333%;
+}
