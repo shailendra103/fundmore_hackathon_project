@@ -33,6 +33,10 @@
                 height: 90%;
                 width: 40%;
             }
+            .image-slider {
+              width:1050px;
+              height:600px;
+            }
         </style>
 
     <!--[if lt IE 9]>
@@ -123,52 +127,39 @@
         </div>
       </header>
       <div id='main' role='main'>
-        <div id='main-content-header1'>
-          <div class='container'>
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
 
-        <!-- Wrapper for Slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <!-- Set the first background image using inline CSS below. -->
-                <div>
-                  <img src='http://cssslider.com/sliders/demo-8/data1/images/dirt_bike_motorcycle_jump_autumn.jpg' alt='bootstrap carousel' title='Motorcycle jump ' />
-
+        <div class='hero-carousel carousel-blur carousel-blur-arrows carousel-blur-pagination flexslider' id='carousel-example-1'  style="">
+          <ul class='slides'>
+            <li class='item'>
+              <div class='container'>
+                <div class='row'>
+                  <div class='col-lg-12 animate'>
+                   <img height="100%" height="100%" class="image-slider" src="assets/images/image-detail1.jpg" alt="BBQ Area" title="BBQ Area">
+                  </div>
                 </div>
-            </div>
-            <div class="item">
-                <!-- Set the second background image using inline CSS below. -->
-                <div>
-                  <img src='http://cssslider.com/sliders/demo-8/data1/images/dirt_bike_motorcycle_jump_autumn.jpg' alt='bootstrap carousel' title='Motorcycle jump ' />
+              </div>
+            </li>
+            <li class='item'>
+              <div class='container' >
+                <div class='row'>
+                  <div class='col-lg-12 animate'>
+                    <img src="assets/images/image-detail2.jpg" class="image-slider" alt="BBQ Area" title="BBQ Area">
+                  </div>
                 </div>
-            </div>
-            <div class="item">
-                <!-- Set the third background image using inline CSS below. -->
-                <div>
-
-                  <img src='http://cssslider.com/sliders/demo-8/data1/images/motorcycle_zero_s_action_san_francisco_stunt_rider.jpg' alt='HTML5 image freeware navigation  autoplay with thumb' title='Stunt rider' />
+              </div>
+            </li>
+            <li class='item'>
+              <div class='container'>
+                <div class='row'>
+                  <div class='col-lg-12 animate'>
+                    <img src="assets/images/image-detail3.jpg" class="image-slider" alt="BBQ Area" title="BBQ Area">
+                  </div>
                 </div>
-            </div>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-
-    </header>
-          </div>
-        </div>
         <div id='main-content'>
           <div class='container'>
             <h2 class="no-mg-t font-weight-bold dark delta">30 Unit Residential Condo </h2>
